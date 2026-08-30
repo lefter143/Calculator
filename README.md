@@ -6,11 +6,9 @@ A lightweight browser-based calculator built with HTML, CSS, and JavaScript. It 
 
 Hosted app: [Click Here](https://calculator-nyc.vercel.app/)
 
-> Replace the placeholder above with your actual deployment link when you publish the project.
-
 ## Screenshot
 
-![Calculator GUI](src\calculator-gui.png)
+![Calculator GUI](src/calculator-gui.png)
 
 ## Features
 
@@ -90,4 +88,4 @@ This project is provided for educational and personal use.
 
 ## Author
 
-Created as a front-end calculator practice project.
+Yimnai Conrad.
