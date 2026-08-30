@@ -4,7 +4,7 @@ A lightweight browser-based calculator built with HTML, CSS, and JavaScript. It 
 
 ## Live Demo
 
-Hosted app: [Click Here](https://calculator-nyc.vercel.app/)
+Hosted app: https://calculator-nyc.vercel.app/
 
 ## Screenshot
 
