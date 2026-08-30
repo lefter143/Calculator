@@ -12,6 +12,7 @@ body {
     background: linear-gradient(136deg,rgb(4, 184, 255) 15%, rgb(2, 85, 217) 92%);
 }
 
+
 .calculator {
     display: flex;
     flex-direction: column;
