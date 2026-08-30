@@ -1,0 +1,115 @@
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background: linear-gradient(136deg,rgb(4, 184, 255) 15%, rgb(2, 85, 217) 92%);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 14px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}
+
+.display-result {
+    display: flex;
+    height: 65px;
+    width: 95%;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: rgb(247, 247, 247);
+    box-shadow: 0 0 5px rgba(133, 132, 132, 0.43) inset;
+    font-weight: 600;
+    font-size: 1.7em;
+    align-items: center;
+    justify-content: right;
+}
+
+.calculator-screen {
+    padding: 8px;
+}
+
+.operator {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#division-operator, #multiplication-operator, #minus-operator, #plus-operator {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(143, 143, 143, 0.634);
+    background-color: rgb(255, 209, 102);
+}
+
+.numpad {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+}
+
+#operator-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    /* padding-bottom: 4px; */
+}
+
+.number, #clear, .row-operation, .operators, #equal-sign {
+    display: flex;
+    padding: 4px;
+    margin: 8px;
+    width: 50px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(187, 222, 251);
+    box-shadow: 0 0 5px rgba(143, 143, 143, 0.634);
+    transition: transform 0.1s ease; 
+}
+
+.number:active, #clear:active, .row-operation:active, .operators:active, #equal-sign:active, #division-operator:active, #multiplication-operator:active, #minus-operator:active, #plus-operator:active {
+    transform: translateY(3px);
+    box-shadow: none; 
+}
+
+
+.operators {
+    background-color: rgb(252, 198, 98);
+}
+
+#clear {
+    color: white;
+    background-color: rgb(245, 92, 71);
+}
+
+#equal-sign {
+    width: 125px;
+    color: white;
+    background-color: rgb(10, 214, 160);
+    padding-top: 0;
+}
