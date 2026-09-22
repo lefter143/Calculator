@@ -20,12 +20,11 @@ body {
     background-color: white;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .display-result {
     display: flex;
-    flex-direction: column;
     height: 65px;
     width: 95%;
     border-radius: 6px;
@@ -37,49 +36,27 @@ body {
     box-shadow: 0 0 5px rgba(133, 132, 132, 0.43) inset;
     font-weight: 600;
     font-size: 1.7em;
-    align-items: right;
+    align-items: center;
     justify-content: right;
-}
-
-.display-state { 
-    display: flex; 
-    justify-content: right;
-    gap: 10px;
-    font-size: 11px;
-    font-weight: 700;
-    color: #a3a3a3;
-    padding-right: 8px;
-}
-
-.state-drg {
-    display: flex;
-    gap: 1px; 
-}
-
-.drg-letter {
-    color: #a3a3a3;
 }
 
 .calculator-screen {
-    display: flex;
-    align-items: center;
-    justify-content: right;
     padding: 8px;
 }
 
-.img {
+.operator-img {
     width: 25px;
     height: 25px;
     padding: 10px;
-    filter: invert(100%);
-    transform-origin: center;
-    transform: scale(0.8);
 }
 
-.image {
+.operator {
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(143, 143, 143, 0.634);
+    background-color: rgb(255, 209, 102);
+    transition: transform 0.1s ease;
+    cursor: pointer;
 }
 
 .numpad {
@@ -89,75 +66,46 @@ body {
     font-weight: 600;
 }
 
-.button {
+.row{
+    display: flex;
+}
+
+#operator-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    /* padding-bottom: 4px; */
+}
+
+.number, #clear, #equal-sign {
     display: flex;
     padding: 4px;
-    margin: 5px;
+    margin: 8px;
     width: 50px;
     height: 45px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     outline: none;
+    background-color: rgb(187, 222, 251);
     box-shadow: 0 0 5px rgba(143, 143, 143, 0.634);
     cursor: pointer;
     transition: transform 0.1s ease;
 }
 
-.number {
-    background-color: rgb(187, 222, 251);
-}
-
-.blue {
-    color: white;
-    background-color: rgb(68, 149, 234);
-}
-
-.yellow {
-    background-color: rgb(255, 209, 102);
-}
-
-.light-gray {
-    height: 25px;
-    font-size: 0.8em;
-    background-color: rgb(176, 176, 176);
-}
-
-.red {
-    color: white;
-    background-color: rgb(245, 92, 71);
-}
-
-.row{
-    display: flex;
-}
-
-.button:active {
+.number:active, #clear:active, #equal-sign:active, .operator:active {
     transform: translateY(3px);
     box-shadow: none; 
 }
 
-#memory-row, #DRG, #EXP, #inverse, #grand-total, #delete, #one-over-x {
-    font-size: 0.8em;
-}
-
-#e {
-    font-size: 1.1em;
-}
-
-#answer {
-    font-size: 0.86em;
-    background-color: rgb(176, 176, 176);
+#clear {
+    color: white;
+    background-color: rgb(245, 92, 71);
 }
 
 #equal-sign {
     width: 125px;
     color: white;
     background-color: rgb(10, 214, 160);
-    padding: 1px;
-}
-
-#empty {
-    box-shadow: none;
-    cursor: default; 
+    padding-top: 0;
 }

@@ -9,40 +9,96 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display-result"><span class="calculator-screen"></span></div>
+        <div class="display-result">
+            
+            <span class="display-state">
+
+                <span class="state-item" id="state-inv">INV</span>
+                <span class="state-item" id="state-mem">MEM</span>
+                
+                <span class="state-drg">
+                    <span class="drg-letter active" id="drg-d">D</span>
+                    <span class="drg-letter" id="drg-r">R</span>
+                    <span class="drg-letter" id="drg-g">G</span>
+                </span>
+
+            </span>
+
+            <span class="calculator-screen"></span>
+
+        </div>
         
         <div class="numpad">
             
-            <div class="row" id="operator-row">
-                <button id="plus-operator"><img class="operator" src="./src/icons8_plus_math.svg" alt="plus icon"></button>
-                <button id="minus-operator"><img class="operator" src="./src/icons8_subtract.svg" alt="minus icon"></button>
-                <button id="multiplication-operator"><img class="operator" src="./src/icons8_multiply.svg" alt="multiplication icon"></button>
-                <button id="division-operator"><img class="operator" src="./src/icons8_divide.svg" alt="division icon"></button>
+            <div class="row" id="memory-row">
+                <span id="mark-up" class="light-gray button">MU</span>
+                <span id="memory-clear" class="memory light-gray button">MC</span>
+                <span id="memory-recall" class="memory light-gray button">MR</span>
+                <span id="memory-plus" class="memory light-gray button">M+</span>
+                <span id="memory-minus" class="memory light-gray button">M-</span>
+            </div>
+
+            <div class="row" id="misc-row">
+                <span id="factorial" class="blue image button"><img class="img" src="./src/icons8_factorial.svg" alt="factorial icon"></span>
+                <span id="DRG" class="state blue button">DRG</span>
+                <span id="EXP" class="operator blue button">EXP</span>
+                <span id="percent" class="operator blue image button"><img class="img" src="./src/icons8_percent.svg" alt="percent icon"></span>
+                <span id="grand-total" class="blue button">GT</span>
+            </div>
+
+            <div class="row" id="trig-row">
+                <span id="inverse" class="state blue button">INV</span>
+                <span id="square-root" class="function blue image button"><img class="img" src="./src/icons8_root.svg" alt="square-root icon"></span>
+                <span id="sine" class="function blue button">sin</span>
+                <span id="cosine" class="function blue button">cos</span>
+                <span id="tangent" class="function blue button">tan</span>
             </div>
 
             <div class="row">
-                <span id="seven" class="number">7</span>
-                <span id="eight" class="number">8</span>
-                <span id="nine" class="number">9</span>
-                <span id="four" class="number">4</span>
+                <span id="square-operator" class="operator blue image button"><img class="img" src="./src/icons8_square.svg" alt="x squared icon"></span>
+                <span id="one-over-x" class="operator blue button">1/x</span>
+                <span id="left-parenthesis" class="parenthesis blue image button"><img class="img" src="./src/icons8_left_parenthese.svg" alt="left parenthesis icon"></span>
+                <span id="right-parenthesis" class="parenthesis blue image button"><img class="img" src="./src/icons8_right_parenthese.svg" alt="right parenthesis icon"></span>
+                <span id="power-operator" class="operator blue image button"><img class="img" src="./src/icons8_power.svg" alt="x to the y icon"></span>
+            </div>
+            
+            <div class="row">
+                <span id="logarithm" class="function blue button">log</span>
+                <span id="seven" class="number button">7</span>
+                <span id="eight" class="number button">8</span>
+                <span id="nine" class="number button">9</span>
+                <span id="division-operator" class="operator yellow image button"><img class="img" src="./src/icons8_divide.svg" alt="division icon"></span>
             </div>
 
             <div class="row">
-                <span id="five" class="number">5</span>
-                <span id="six" class="number">6</span>
-                <span id="one" class="number">1</span>
-                <span id="two" class="number">2</span>
+                <span id="natural-logarithm" class="function blue button">ln</span>
+                <span id="four" class="number button">4</span>
+                <span id="five" class="number button">5</span>
+                <span id="six" class="number button">6</span>
+                <span id="multiplication-operator" class="operator yellow image button"><img class="img" src="./src/icons8_multiply.svg" alt="multiplication icon"></span>
             </div>
 
             <div class="row">
-                <span id="three" class="number">3</span>
-                <span id="zero" class="number">0</span>
-                <span id="dot" class="number">.</span>
-                <span id="clear">C</span>
+                <span id="pi" class="number image blue button"><img class="img" src="./src/icons8_pi.svg" alt="pi icon"></span>
+                <span id="one" class="number button">1</span>
+                <span id="two" class="number button">2</span>
+                <span id="three" class="number button">3</span>
+                <span id="minus-operator" class="operator yellow image button"><img class="img" src="./src/icons8_subtract.svg" alt="minus icon"></span>
             </div>
 
             <div class="row">
-                <span id="equal-sign">=</span>
+                <span id="e" class="number blue button">e</span>
+                <span id="zero" class="number button">0</span>
+                <span id="dot" class="number button">.</span>
+                <span id="clear" class="red button">C</span>
+                <span id="plus-operator" class="operator yellow image button"><img class="img" src="./src/icons8_plus_math.svg" alt="plus icon"></span>
+            </div>
+
+            <div class="row">
+                <span id="equal-sign" class="yellow image button">=</span>
+                <span id="empty" class="button"></span>
+                <span id="delete" class="red button">DEL</span>
+                <span id="answer" class="button">Ans</span>
             </div>
 
         </div>
